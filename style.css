@@ -188,14 +188,6 @@ h2{
   -webkit-text-fill-color: transparent;
   color: #912759; 
 }
-#icon1:hover{
-  font-size: 25px;
-  background-color: #8761a7;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color:#8761a7;
-}
 #insta{
   font-weight: bold;
 }
@@ -229,7 +221,7 @@ h2{
     margin-top: -100vh;
 }
 .main{
-  transition: all .8s;
+  transition: all .6s;
 }
 input{
   display: none;
@@ -240,6 +232,6 @@ input{
 }  
 .navbar label:hover{
   background-color: rgba(255, 255, 255, 0.664);
-  color:rgb(90, 90, 90);
+  color:#912759;
   animation-fill-mode: forwards;
 }
