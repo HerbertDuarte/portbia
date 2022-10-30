@@ -11,13 +11,24 @@
 </head>
 <body>
     <nav class="navbar">
-      <ul class="nav-ul"><li><label for="rd_inicio" class="nav-a" href="index.html">Início</label></li></ul>
-      <ul class="nav-ul">
-        <li><label for="rd_sobremim" class="nav-a" href="index.html">Sobre mim</label></li>
-        <li><label for="rd_habilidades" class="nav-a" href="">Habilidades</label></li>
-        <li><label for="rd_projetos" class="nav-a" href="">Meus projetos</label></li>
-        <li><label for="rd_contatos" class="nav-a" href="index.html">Fale comigo</label></li>
-      </ul>
+      <section class="nav-inicio"><label for="rd_inicio" class="nav-a">Início</label></section>
+      
+      <div class="check">
+        <input type="checkbox" name="check" id="check">
+        <div class="nav-ul">
+          <label for="rd_sobremim" class="nav-a">Sobre mim</label>
+          <label for="rd_habilidades" class="nav-a">Habilidades</label>
+          <label for="rd_projetos" class="nav-a" >Meus projetos</label>
+          <label for="rd_contatos" class="nav-a" >Fale comigo</label>
+        </div>
+      <section>
+          <label for="check" class="menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </label>
+      </section>
+      </div>
     </nav>
     <div class="scroll">
       <input type="radio" name="grupo" id="rd_inicio" checked="true">
@@ -51,7 +62,7 @@
         <section id="main2">
         <div class="div-h">
           <h1 class="h1-mc">Fale comigo</h1>
-          <p class="text-contact">Você pode falar comigo pelo meu email ou acessando uma das minhas redes sociais:</p>
+          <p class="text-contact">Você pode falar comigo pelo meu <a id="linkemail" href="email.html">email</a> ou acessando uma das minhas redes sociais:</p>
         </div>
         <div class="div-social">
           <ul class="ul-mecontate">
@@ -65,12 +76,11 @@
       </main>
 
     </div>
-    
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
   <script>
     AOS.init();
   </script>
+  <script src="menu.js" type="text/javascript"></script>
 </body>
 </html>
