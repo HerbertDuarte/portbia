@@ -236,8 +236,11 @@ h2{
   margin: 20px;
   text-align: center;
 }
+#linkemail:hover{
+  color: #ca377c;
+}
 #linkemail{
-  color: #bc1888;
+  color: #912759;
 }
 .ul-mecontate{
   list-style: none;
@@ -358,7 +361,7 @@ input{
   justify-content: space-between;
  }
 }
-@media (max-width:615px){
+@media (max-width:670px){
   .minhaimagem{
     display: none;
   }
@@ -371,7 +374,7 @@ input{
   }
   
 }
-@media(max-width:370px){
+@media(max-width:390px){
   .div2{
     display: none;
   }
