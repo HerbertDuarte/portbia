@@ -374,7 +374,7 @@ input{
   }
   
 }
-@media(max-width:390px){
+@media(max-width:480px){
   .div2{
     display: none;
   }
