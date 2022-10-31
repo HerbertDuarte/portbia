@@ -35,11 +35,23 @@ a{
   margin: 15px;
 }
 /*SHEETS DA PAGINA DE FORMULARIO DE EMAIL*/
+
+.forms{
+  display:flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
 main{
   transform: translateY(40px);
-  display: cover;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
   justify-content: center;
   padding: 15px 25px;
+  width: 90%;
+  max-width: 730px;
 
   animation:fade .1s linear;
   animation-delay: 0.25s;
@@ -54,16 +66,6 @@ h1{
 label{
   font-size: 1.3em;
   color: #912759;
-
-}
-.formulario label{
-  font-size: 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  gap: 15px;
-
 }
 input, textarea{
   width: 100%;
