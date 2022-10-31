@@ -47,10 +47,23 @@ nav{
   background-color: rgba(255, 255, 255, 0.664);
   color: #912759;
 }
-
+.navbar label:hover .line{
+  background-color: #912759;
+}
 .nav-a{
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+.menu div{
+  width: 32px;
+  height: 3px;
+  background: #fff;
+  margin: 5px;
+  border-radius: 10px;
+}
+.menu{
+  display: none;
   cursor: pointer;
 }
 
@@ -321,18 +334,6 @@ h2{
 }
 input{
   display: none;
-}
-
-.menu div{
-  width: 32px;
-  height: 3px;
-  background: #fff;
-  margin: 5px;
-  border-radius: 10px;
-}
-.menu{
-  display: none;
-  cursor: pointer;
 }
 
 @media (max-width:700px) {
