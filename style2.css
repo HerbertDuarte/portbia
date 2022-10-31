@@ -16,6 +16,7 @@
 body, button, input, textarea{
   font-family: 'cafe', Helvetica, sans-serif;
 }
+/*BARRA DE NAVEGAÇÃO*/
 nav{
   z-index: 2;
   position: fixed;
@@ -33,6 +34,7 @@ a{
   color: #fff;
   margin: 15px;
 }
+/*SHEETS DA PAGINA DE FORMULARIO DE EMAIL*/
 main{
   transform: translateY(40px);
   display: cover;
@@ -71,6 +73,7 @@ input, textarea{
   box-sizing: border-box;
   resize: none;
   margin: 10px 0;
+  box-shadow: 1px 2px 5px rgba(136, 97, 167, 0.596);
 }
 input{
   padding: 5px 5px;
@@ -104,6 +107,8 @@ button:hover{
   background-color: #8761a7;
   box-shadow: 2px 2px 10px rgb(136, 97, 167);
 }
+
+/*SHEETS DA PÁGINA THANKS*/
 .obrigada{
   padding: 80px 5px;
   display: cover;
@@ -116,7 +121,13 @@ button:hover{
   align-items: center;
   justify-content: center;
 }
-i{
+i{ /*ÍCONE DE MENSAGEM*/
   color: #912759;
   font-size: 6em;
+}
+/*RESPONSIVIDADE*/
+@media (min-width:700px){
+  nav{
+    padding: 0 15%;
+  }
 }
