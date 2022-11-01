@@ -228,6 +228,81 @@ h2{
   color: #fff;
   font-weight: 500;
 }
+
+/* MAIN ME CONTATE */
+
+#main3{
+  height: 100vh;
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#main3 h1{
+  text-align: center;
+}
+.subtitulohab{
+  text-align: center;
+  min-width: 90vw;
+  margin-right: 10px;
+}
+.habimg{
+  height: 70px;
+  width: 70px;
+}
+.hab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: #912759 solid 2px;
+  border-radius: 25px;
+  cursor: context-menu;
+  transition: all .3s;
+  box-shadow: 1px 1px 15px  #8861a77c;
+}
+.hab:hover{
+  background-image:linear-gradient(45deg, #9127597a, #8861a75e);
+  transform: scale(1.2);
+  box-shadow: 2px 2px 30px rgb(136, 97, 167);
+  z-index: 2;
+}
+.hab:hover h3{
+  display: block;
+}
+.divhab{
+  margin: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hab h2{
+  color: #912759;
+  transform: translateX(-7px);
+}
+.hab h3{
+  text-shadow: rgba(0, 0, 0, 0.144) 1px 1px 1px;
+  font-weight: lighter;
+  color: #fff;
+  display: none;
+  font-size: 1.3em;
+}
+.habdiv1, .habdiv2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.texthab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* MAIN ME CONTATE */
 
 #main5{
@@ -314,6 +389,7 @@ h2{
 }
 
 /* ANIMAÇÕES E RESPONSIVIDADE*/
+
 .scroll{
   display: flex;
   width: 100vw;
@@ -325,9 +401,13 @@ h2{
 #rd_sobremim:checked ~ .main{
     margin-top: -100vh;
 }
-#rd_contatos:checked ~ .main{
+#rd_habilidades:checked ~ .main{
   margin-top: -200vh;
 }
+#rd_contatos:checked ~ .main{
+  margin-top: -300vh;
+}
+
 
 .main{
   transition: all .6s;
@@ -347,6 +427,9 @@ input{
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
+ }
+ .habdiv1, .habdiv2{
+  flex-direction: column;
  }
  #check:checked ~ .nav-ul{
   height: 30vh;
@@ -378,5 +461,35 @@ input{
 @media(max-width:480px){
   .div2{
     display: none;
+  }
+  .hab{
+    transition: all .2s;
+    height: 130px;
+    width: 130px;
+  }
+ 
+@media(max-width:420px){
+
+  .hab{
+      width: 30vw;
+      height: 30vw; 
+    }
+  }
+  .habimg{
+    width: 15vw;
+    height: 15vw; 
+  }
+  .hab h3{
+    font-size: 1.05em;
+  }
+}
+@media(max-width:375px){
+  .hab h3{
+    font-size: 0.95em;
+  }
+}
+@media(max-width:315px){
+  .hab h3{
+    font-size: 0.75em;
   }
 }
