@@ -234,7 +234,7 @@ h2{
 #main3{
   height: 100vh;
   width: 100vw;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -301,6 +301,64 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* MAIN ME PROJETOS */
+
+#main4{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#main4 h1{
+  margin: 10px;
+}
+.projetos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.proj{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+  width: 200px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  transition: all .4s;
+  box-shadow: 1px 2px 15px rgba(136, 97, 167, 0.596);
+
+  background-image:linear-gradient(45deg, #9127597a, #8861a75e);
+  border: #912759 solid 2px;
+  border-radius: 15px;
+}
+.proj img{
+  height: 100px;
+  width: 200px;
+  align-self: center;
+}
+.proj h2{
+  color: #912759;
+  transform: translateX(-7px);
+  text-align: center;
+  justify-content: center;
+}
+.proj:hover{
+  transform: scale(1.2);
+  box-shadow: 2px 2px 30px rgb(136, 97, 167);
+  z-index: 2;
+}
+.proj i{
+  color: #912759;
+  font-size: 3em;
 }
 
 /* MAIN ME CONTATE */
@@ -404,8 +462,11 @@ h2{
 #rd_habilidades:checked ~ .main{
   margin-top: -200vh;
 }
-#rd_contatos:checked ~ .main{
+#rd_projetos:checked ~ .main{
   margin-top: -300vh;
+}
+#rd_contatos:checked ~ .main{
+  margin-top: -400vh;
 }
 
 
