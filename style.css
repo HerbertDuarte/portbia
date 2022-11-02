@@ -432,6 +432,9 @@ h2{
   flex-direction: column;
   align-items:flex-start;
 }
+.li-contateme{
+  min-width: 85vw;
+}
 .a-mecontate{
   display: flex;
   flex-direction: row;
@@ -446,8 +449,8 @@ h2{
   border: solid 2px #912759;
   border-radius: 20px;
   padding: 8px;
-  min-width: 300px;
-  max-width: 320px;
+  width: 320px;
+  
   height: 30px;
   margin: 3px;
   background-color: white;
@@ -627,7 +630,11 @@ input{
   .proj{
     height: 10vh;
   }
+  .a-mecontate{
+    width: 85vw;
+  }
 }
+
 @media(max-width:315px){
   .hab h3{
     font-size: 0.75em;
