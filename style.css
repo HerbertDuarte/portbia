@@ -536,6 +536,8 @@ input{
  }
  .proj img{
   width: 40vw;
+  margin:0;
+  padding:0;
   margin-bottom: 0;
  }
  .proj i{
