@@ -320,7 +320,7 @@ h2{
 .projetos{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 25px;
 }
@@ -351,6 +351,23 @@ h2{
   text-align: center;
   justify-content: center;
 }
+.proj h3{
+  font-size: 1.1em;
+  display: none;
+  color: #ffffff;
+  font-weight: lighter;
+  text-shadow: 1px 1px 5px #333;
+  text-align: center;
+  justify-content: center;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+.proj:hover > h3{
+  display: block;
+}
+#proj1:hover > i{
+  display: none;
+}
 .proj:hover{
   transform: scale(1.2);
   box-shadow: 2px 2px 30px rgb(136, 97, 167);
@@ -358,7 +375,10 @@ h2{
 }
 .proj i{
   color: #912759;
-  font-size: 3em;
+  font-size: 3em
+}
+.tituloproj{
+  text-align: center;
 }
 
 /* MAIN ME CONTATE */
@@ -505,6 +525,32 @@ input{
  .navbar{
   justify-content: space-between;
  }
+ .projetos{
+  flex-direction: column;
+ }
+ .proj{
+  height: 13vh;
+  width: 80vw;
+  flex-direction: row;
+  padding-bottom: 0;
+ }
+ .proj img{
+  width: 40vw;
+  margin-bottom: 0;
+ }
+ .proj i{
+  display: none;
+ }
+ .proj h2{
+  font-size: 1.6em;
+ }
+ .proj:hover > h3{
+  display: none;
+ }
+ .proj:hover{
+  transform: scale(1.1);
+ }
+
 }
 @media (max-width:670px){
   .minhaimagem{
@@ -528,14 +574,23 @@ input{
     height: 130px;
     width: 130px;
   }
- 
+}
+@media(max-width:450px){
+  .proj > h2{
+    font-size: 5.5vw;
+  }
+  .proj > img{
+    width: 45vw;
+    object-fit: cover;
+  }
+}
 @media(max-width:420px){
-
+  
   .hab{
       width: 30vw;
       height: 30vw; 
-    }
   }
+  
   .habimg{
     width: 15vw;
     height: 15vw; 
