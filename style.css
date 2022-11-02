@@ -315,7 +315,14 @@ h2{
   background-color: white;
 }
 #main4 h1{
+  margin: 0;
+  padding: 0;
+}
+.subtituloproj{
+  text-align: center;
   margin: 10px;
+  margin-bottom: 30px;
+  max-width: 820px;
 }
 .projetos{
   display: flex;
@@ -354,6 +361,7 @@ h2{
 .proj h3{
   font-size: 1.1em;
   display: none;
+  transform: translateY(50px);
   color: #ffffff;
   font-weight: lighter;
   text-shadow: 1px 1px 5px #333;
@@ -361,9 +369,11 @@ h2{
   justify-content: center;
   margin: 0 10px;
   margin-bottom: 10px;
+  transition: all 1s;
 }
 .proj:hover > h3{
   display: block;
+  transform: translateX(0);
 }
 #proj1:hover > i{
   display: none;
@@ -477,7 +487,7 @@ h2{
   align-items: center;
 }
 #rd_sobremim:checked ~ .main{
-    margin-top: -100vh;
+  margin-top: -100vh;
 }
 #rd_habilidades:checked ~ .main{
   margin-top: -200vh;
@@ -535,7 +545,7 @@ input{
   padding-bottom: 0;
  }
  .proj img{
-  width: 40vw;
+  width: 200px;
   margin:0;
   padding:0;
   margin-bottom: 0;
@@ -605,6 +615,9 @@ input{
 @media(max-width:375px){
   .hab h3{
     font-size: 0.95em;
+  }
+  .proj{
+    height: 10vh;
   }
 }
 @media(max-width:315px){
