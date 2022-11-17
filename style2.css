@@ -92,6 +92,8 @@ input:focus, input:hover, textarea:focus, textarea:hover{
   background-color: #8861a738;
   border:#8761a7 solid 2px;
   color: rgb(46, 46, 46);
+  outline: 0;
+  color: rgb(0, 0, 0);
 }
 button{
   width: 130px;
