@@ -405,7 +405,7 @@ h2{
 /* MAIN ME CONTATE */
 
 #main5{
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -488,6 +488,22 @@ h2{
 }
 .div-h{
   margin: 20px;
+}
+footer{
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > p{
+  color: #333;
+}
+#herbert{
+  color: #681c40;
+}
+#herbert:hover{
+  color: #bc1888;
 }
 
 /* ANIMAÇÕES E RESPONSIVIDADE*/
