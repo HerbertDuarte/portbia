@@ -50,8 +50,7 @@ main{
   flex-direction: column;
   justify-content: center;
   padding: 15px 25px;
-  width: 90%;
-  max-width: 730px;
+  width: 100%;
 
   animation:fade .1s linear;
   animation-delay: 0.25s;
