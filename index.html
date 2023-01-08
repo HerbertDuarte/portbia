@@ -4,70 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maria Beatriz - Portifólio</title>
-  <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="assets/script.js"></script>
+  <script defer src="assets/indicador-scroll.js"></script>
+  <script defer src="assets/mobile-navbar.js"></script>
+  <title>Portifólio - Maria Beatriz</title>
 </head>
 <body>
+  <header id="menu">
+      <a href="#tela-1" class="inicio" id="inicio">
+        Início
+      </a>
+      <span id="mobile-menu">
+        <i id="x" class="fa-solid fa-xmark"></i>
+        <i id="sandwich" class="fa-solid fa-bars"></i>
+      </span>
 
-      <!-- BARRA DE NAVEGAÇÃO -->
+        <ul id="nav-list">
+          <li><a id="sobre" class="nav-items" href="#tela-2">Sobre mim</a></li>
+          <li><a id="habilidades" class="nav-items" href="#tela-3">Habilidades</a></li>
+          <li><a id="projetos" class="nav-items" href="#tela-4">Meus projetos</a></li>
+          <li><a id="contatos" class="nav-items" href="#tela-5">Contatos</a></li>
+        </ul>
+  </header>
 
-    <nav class="navbar">
-      <section class="nav-inicio"><label for="rd_inicio" class="nav-a">Início</label></section>
-      
-      <div class="check">
-        <input type="checkbox" name="check" id="check">
-        <div class="nav-ul">
-          <label for="rd_sobremim" class="nav-a">Sobre mim</label>
-          <label for="rd_habilidades" class="nav-a">Habilidades</label>
-          <label for="rd_projetos" class="nav-a" >Meus projetos</label>
-          <label for="rd_contatos" class="nav-a" >Contatos</label>
-        </div>
-      <section>
-          <label for="check" class="menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </label>
-      </section>
+  <main>
+
+    <section id="tela-1">
+      <div class="div1">
+        <h1>Olá, eu me <br> chamo <br> Maria Beatriz</h1>
+        <h2>Desenvolvedora de software</h2>
+        <p class="lorem">Olá, essa é a minha página, onde você poderá me conhecer melhor, saber mais sobre minhas experiências e minhas habilidades. Aqui você também encontrará meus projetos e exercícios durante meus estudos de programação!</p>
+          <a href="email.html" target="_blank" rel="external" ><div class="button" >Enviar mensagem  </div></a>
       </div>
-    </nav>
-    <div class="scroll">
-      <input type="radio" name="grupo" id="rd_inicio" checked="true">
-      <input type="radio" name="grupo" id="rd_sobremim">
-      <input type="radio" name="grupo" id="rd_habilidades">
-      <input type="radio" name="grupo" id="rd_projetos">
-      <input type="radio" name="grupo" id="rd_contatos">
+      <div class="div2"
+       ><img class="minhaimagem" src="images/bia3.png" alt="minha imagem">
+        <ul class="icon-ul">
+          <li><a id="icon1" class="a-icon" href="https://github.com/marialaceo" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a></li>
+          <li><a class="a-icon" href="https://twitter.com/mariabiizz" target="_blank" rel="external"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a class="a-icon" href="https://www.instagram.com/marialaceo/" target="_blank" rel="external"><i id="insta" class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="a-icon" href="https://www.linkedin.com/in/maria-beatriz-lacerda-052115212/" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </section>
 
-      <main class="main">
-
-        <!-- MAIN 1 (INÍCIO) -->
-        <section id="main1"
-        data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="100"
-        >
-          <div class="div1">
-            <h1>Olá, eu me <br> chamo <br> Maria Beatriz</h1>
-            <h2>Desenvolvedora de software</h2>
-            <p class="lorem">Olá, essa é a minha página, onde você poderá me conhecer melhor, saber mais sobre minhas experiências e minhas habilidades. Aqui você também encontrará meus projetos e exercícios durante meus estudos de programação!</p>
-              <a href="email.html" target="_blank" rel="external" ><div class="button" >Enviar mensagem  </div></a>
-          </div>
-          <div class="div2"
-           ><img class="minhaimagem" src="images/bia3.png" alt="minha imagem">
-            <ul class="icon-ul">
-              <li><a id="icon1" class="a-icon" href="https://github.com/marialaceo" target="_blank" rel="external"><i class="fa-brands fa-github"></i></a></li>
-              <li><a class="a-icon" href="https://twitter.com/mariabiizz" target="_blank" rel="external"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a class="a-icon" href="https://www.instagram.com/marialaceo/" target="_blank" rel="external"><i id="insta" class="fa-brands fa-instagram"></i></a></li>
-              <li><a class="a-icon" href="https://www.linkedin.com/in/maria-beatriz-lacerda-052115212/" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- MAIN 2 (SOBRE MIM) -->
-        <section id="main2">
-          <h1>Quem sou eu?</h1>
+    <section id="tela-2">
+      <h1>Quem sou eu?</h1>
           <p class="textsobremim">Olá, me chamo <span class="maria">Maria Beatriz</span>, sou desenvolvedora back-end com intenção de crescer e evoluir nessa linha, mas também aberta a todos os tipos de experiências profissionais no segmento de tecnologia. Atualmente resido no município de Vitória da Conquista, na Bahia e faço o curso de Bacharel em Sistemas de Informação no <abbr style="text-decoration:none;" title="Instituto Federal de Educação, Ciência e Tecnologia da Bahia">IFBA</abbr>.</p>
           
           <div class="adicionais">
@@ -90,51 +73,49 @@
               <p>Download CV <i class="fa-solid fa-download"></i></p>
             </div>
           </a>
-        </section>
+    </section>
 
-        <!-- MAIN 3 (HABILIDADES) -->
-        <section id="main3">
-          <h1 class="titulohab">Minhas habilidades</h1>
-          <h2 class="subtitulohab">Meus conhecimentos sobre tecnologia, programação e desenvolvimento back-end:</h2>
-          <div class="divhab">
-            <div class="habdiv1">
-              <div class="hab">
-                <img class="habimg" src="icons/Python.png" alt="Python">
-                <div class="texthab">
-                  <h2>Pyhton</h2>
-                  <h3>intermediário</h3>
-                </div>
-              </div>
-              <div class="hab">
-                <img class="habimg" src="icons/cpp.png" alt="C++">
-                <div class="texthab">
-                  <h2>C++</h2>
-                  <h3>intermediário</h3>
-                </div>
-              </div>
+    <section id="tela-3">
+      <h1 class="titulohab">Minhas habilidades</h1>
+      <h2 class="subtitulohab">Meus conhecimentos sobre tecnologia, programação e desenvolvimento back-end:</h2>
+      <div class="divhab">
+        <div class="habdiv1">
+          <div class="hab">
+            <img class="habimg" src="icons/Python.png" alt="Python">
+            <div class="texthab">
+              <h2>Pyhton</h2>
+              <h3>intermediário</h3>
             </div>
-            <div class="habdiv2">
-              <div class="hab">
-                <img class="habimg" src="icons/Git.png" alt="Git">
-                <div class="texthab">
-                  <h2>Git</h2>
-                  <h3>básico</h3>
-                </div>
-              </div>
-              <div class="hab">
-                <img class="habimg" src="icons/ingles.png" alt="Inglês">
-                <div class="texthab">
-                  <h2>Inglês</h2>
-                  <h3>básico</h3>
-                </div>
-              </div>
+          </div>
+          <div class="hab">
+            <img class="habimg" src="icons/cpp.png" alt="C++">
+            <div class="texthab">
+              <h2>C++</h2>
+              <h3>intermediário</h3>
             </div>
+          </div>
+        </div>
+        <div class="habdiv2">
+          <div class="hab">
+            <img class="habimg" src="icons/Git.png" alt="Git">
+            <div class="texthab">
+              <h2>Git</h2>
+              <h3>básico</h3>
             </div>
-        </section>
+          </div>
+          <div class="hab">
+            <img class="habimg" src="icons/ingles.png" alt="Inglês">
+            <div class="texthab">
+              <h2>Inglês</h2>
+              <h3>básico</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
 
-        <!-- MAIN 4 (PROJETOS) -->
-        <section id="main4">
-          <h1 class="tituloproj">Meus projetos</h1>
+    <section id="tela-4">
+      <h1 class="tituloproj">Meus projetos</h1>
           <h2 class="subtituloproj">Essa área foi reservada para apresentar meus projetos e trabalhos. Mas também afim de servir de demonstração das minhas habilidades e capacidades:</h2>
           <div class="projetos">
             <a href="https://github.com/marialaceo/ProjetoCalculadora">
@@ -159,33 +140,27 @@
                 <h2>Em breve</h2>
               </div>
             </a> 
-            </div>       
-        </section>
+            </div>
+    </section>
 
-        <!-- MAIN 5 (CONTATOS) -->
-        <section id="main5">
-        <div class="div-h">
-          <h1 class="h1-mc">Fale comigo</h1>
-          <p class="text-contact">Você pode falar comigo pelo meu <a id="linkemail" href="email.html">email</a> ou acessando uma das minhas redes sociais:</p>
-        </div>
-        <div class="div-social">
-          <ul class="ul-mecontate">
-            <li class="li-mecontate"><a id="a" class="a-mecontate" href="https://github.com/marialaceo" target="_blank" rel="external"><i class="fa-brands fa-github"></i>Acesse meu perfil no github</a></li>
-            <li class="li-mecontate"><a id="b" class="a-mecontate" href="https://twitter.com/mariabiizz" target="_blank" rel="external"><i class="fa-brands fa-twitter"></i>Me acompanhe no twitter</a></li>
-            <li class="li-mecontate"><a id="c" class="a-mecontate" href="https://www.instagram.com/marialaceo/" target="_blank" rel="external"><i id="insta" class="fa-brands fa-instagram"></i>Me siga no Instagram</a></li>
-            <li class="li-mecontate"><a id="d" class="a-mecontate" href="https://www.linkedin.com/in/maria-beatriz-lacerda-052115212/" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i>Veja minha página no LinkedIn</a></li>
-          </ul>
-        </div> 
-        </section>
-        <footer>
-          <p>Portifólio desenvolvido por <a id="herbert" href="https://github.com/HerbertDuarte">Herbert Duarte</a></p>
-        </footer>             
-      </main>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/bb9ff7a12b.js" crossorigin="anonymous"></script>
-  <script>
-    AOS.init();
-  </script>
+    <section id="tela-5">
+      <div class="div-h">
+        <h1 class="h1-mc">Fale comigo</h1>
+        <p class="text-contact">Você pode falar comigo pelo meu <a id="linkemail" href="form/email.html">email</a> ou acessando uma das minhas redes sociais:</p>
+      </div>
+      <div class="div-social">
+        <ul class="ul-mecontate">
+          <li class="li-mecontate"><a id="a" class="a-mecontate" href="https://github.com/marialaceo" target="_blank" rel="external"><i class="fa-brands fa-github"></i>Acesse meu perfil no github</a></li>
+          <li class="li-mecontate"><a id="b" class="a-mecontate" href="https://twitter.com/mariabiizz" target="_blank" rel="external"><i class="fa-brands fa-twitter"></i>Me acompanhe no twitter</a></li>
+          <li class="li-mecontate"><a id="c" class="a-mecontate" href="https://www.instagram.com/marialaceo/" target="_blank" rel="external"><i id="insta" class="fa-brands fa-instagram"></i>Me siga no Instagram</a></li>
+          <li class="li-mecontate"><a id="d" class="a-mecontate" href="https://www.linkedin.com/in/maria-beatriz-lacerda-052115212/" target="_blank" rel="external"><i class="fa-brands fa-linkedin"></i>Veja minha página no LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>Portifólio desenvolvido por <a id="herbert" href="https://github.com/HerbertDuarte">Herbert Duarte</a></p>
+    </footer> 
+  </main>
+  
 </body>
 </html>
