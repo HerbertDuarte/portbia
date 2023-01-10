@@ -113,9 +113,11 @@ section{
   padding-top: 100px;
   margin-top: 40px;
   width:calc(100% - 50px);
+  max-width: 100%;
   position: relative;
   animation: fade .7s ease-in;
   animation-fill-mode: forwards;
+  overflow-x: hidden;
 }
 
 main{
@@ -123,6 +125,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #mobile-menu{
@@ -168,7 +171,7 @@ transition: display .5s ease;
 #tela-1{
   padding-top: 5vh;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -262,13 +265,18 @@ h2{
 
 #tela-2{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--branco);
 }
+
+#tela-2 h1{
+  text-align: center;
+}
+
 .maria{
   color: var(--rosa);
 }
@@ -330,7 +338,7 @@ h2{
 
 #tela-3{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -405,7 +413,7 @@ h2{
 
 #tela-4{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -502,7 +510,7 @@ h2{
 
 #tela-5{
   height: 85vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,7 +541,7 @@ h2{
 }
 .li-contateme{
   min-width: 85vw;
-  height: 30px;
+  height: 45px;
 }
 .a-mecontate{
   display: flex;
@@ -550,6 +558,7 @@ h2{
   border-radius: 20px;
   padding: 8px;
   width: 320px;
+  height: 45px;
 
   margin: 3px;
   background-color: white;

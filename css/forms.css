@@ -52,6 +52,7 @@ main{
   justify-content: center;
   padding: 15px 25px;
   width: 100%;
+  overflow-x: hidden;
 
   animation:fade .1s linear;
   animation-delay: 0.25s;
